@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react';
 
 function index() {
-  return <div>hey</div>
+  return <div>hey</div>;
 }
 
-export default index
+export default index;
