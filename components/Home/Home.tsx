@@ -1,15 +1,10 @@
-import React from 'react'
-import type { NextPage , NextComponentType } from 'next'
+import React from 'react';
 
-import styles from './styles.module.scss'
+import styles from './styles.module.scss';
 
-const  Home : NextComponentType =()=> {
-    const x = '';
-    return (
-        <div className={styles.test}>
-            Hello
-        </div>
-    )
-}
+const Home = () => {
+  const x = '';
+  return <div className={styles.test}>Hello</div>;
+};
 
-export default Home
+export default Home;

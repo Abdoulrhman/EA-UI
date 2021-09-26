@@ -1,41 +1,17 @@
 module.exports = {
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
   env: {
     browser: true,
-    node: true,
-    es6: true
+    commonjs: true,
+    es2021: true
   },
-  settings: {
-    react: {
-      version: 'detect'
-    }
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 12
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    'prettier',
-    'prettier/react',
-    'eslint:recommended',
-    'plugin:jsx-a11y/recommended',
-    'plugin:react/recommended',
-    'plugin:prettier/recommended',
-    'plugin:sonarjs/recommended',
-    'plugin:unicorn/recommended',
-    'plugin:security/recommended',
-    'plugin:react-hooks/recommended'
-  ],
-  rules: {
-    'no-console': 'error',
-    'react/react-in-jsx-scope': 'off',
-    'react/prop-types': 'off',
-    'simple-import-sort/sort': 'error',
-    'unicorn/filename-case': 'off'
-  },
-  plugins: ['react', 'prettier', 'simple-import-sort']
+  plugins: ['react', '@typescript-eslint'],
+  rules: {}
 };
