@@ -1,5 +1,5 @@
 import React from 'react'
-import GridCard from '../../components/Common/GridCard'
+import GridCard from '../../components/Common/CardGrid'
 
 function index() {
     return (
