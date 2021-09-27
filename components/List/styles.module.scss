@@ -1,4 +1,3 @@
-
 .warpper {
   width: 80%;
   background-color: #ddd;
@@ -32,21 +31,55 @@
           justify-content: center;
           background-color: rgb(66 74 100 / 80%);
         }
+        .heartWrapper {
+          top: 10px;
+          left: 10px;
+          position: absolute;
+          .heartStatus {
+            width: 119px;
+            height: 22px;
+            display: flex;
+            padding: 5px;
+            background: rgb(255 255 255 / 70%);
+            align-items: center;
+            border-radius: 11px;
+            justify-content: center;
+            .heartStatusText {
+              color: "#404040";
+              font-size: 9px;
+              display: flex;
+            }
+            .rightIcon {
+              color: "#404040";
+              width: "12px";
+              height: "12px";
+            }
+            .rightIconAr {
+              color: "#404040";
+              width: "12px";
+              height: "12px";
+              transform: "rotate(180deg)";
+              -webkit-transform: "rotate(180deg)";
+              -moz-transform: "rotate(180deg)";
+              -ms-transform: "rotate(180deg)";
+              -o-transform: "rotate(180deg)";
+            }
+          }
+        }
       }
     }
     .list_details {
       width: 65%;
       background-color: yellow;
-      padding: 10px;
+      padding: 15px;
       .list_title {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         h3 {
           color: #404040;
           font-size: 16px;
           text-align: start;
-
         }
         .cartSocail {
           list-style: none;
@@ -62,76 +95,76 @@
         }
       }
 
-      .proudectStatus{
+      .proudectStatus {
+        display: flex;
+        flex-wrap: wrap;
+        .labelStatus {
+          color: #424a64;
           display: flex;
-		flex-wrap: wrap;
-        .labelStatus{
-color: #424a64;
-    display: flex;
-    padding: 3px 4px 2px 5px;
-    font-size: 12px;
-    min-width: 55px;
-    min-height: 17px;
-    align-items: center;
-    margin-right: 8px;
-    border-radius: 2px;
-    margin-bottom: 5px;
-    justify-content: center;
-    background-color: rgb(238, 238, 238);
-    color: rgb(63, 63, 63);
-}
-        }
-
-        .stats{
-            .statsList{
-                list-style: none;
-                          display: flex;
-                    justify-content: space-between;
-                    padding: 0;
-                        border-top: 1px solid #e2e2e2;
-                        padding-top: 10px;
-
-                li{
-          
-                }
-            }
+          padding: 3px 4px 2px 5px;
+          font-size: 12px;
+          min-width: 55px;
+          min-height: 17px;
+          align-items: center;
+          margin-right: 8px;
+          border-radius: 2px;
+          margin-bottom: 5px;
+          justify-content: center;
+          background-color: rgb(238, 238, 238);
+          color: rgb(63, 63, 63);
         }
       }
-    
+
+      .stats {
+        .statsList {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          padding: 0;
+          border-top: 1px solid #e2e2e2;
+          padding-top: 10px;
+
+          li {
+          }
+        }
+      }
+    }
+
     .list_btn {
       width: 25%;
-      background-color: green;
+      background-color: #fafbfb;
       display: flex;
       justify-content: center;
       flex-direction: column;
+      padding: 15px 30px;
       .price_amount {
-	color: #87d155;
-}
- .amount_label{
-	margin-bottom: 8px;
+        color: #57a721;
+        margin-bottom: 10px;
+      }
+      .amount_label {
+        margin-bottom: 8px;
         font-size: 1.625rem;
- 
-}
-.priceStyle{
-    color:#404040;
-    .secoundSpan{
-font-weight: bold;
-    }
- 
-}
-   .bidBtn{
- width: 167px;
-    padding: 4px;
-    font-size: 13px;
-    border-radius: 20px;
-    background-image: linear-gradient(to left, #08bac1, #60d272);
-        margin: 7px 0px;
-        border:0;
+      }
+      .priceStyle {
+        color: #404040;
+        margin-bottom: 10px;
+        .secoundSpan {
+          font-weight: bold;
+        }
+      }
+      .bidBtn {
+        width: 167px;
+        padding: 4px;
+        font-size: 13px;
+        border-radius: 20px;
+        background-image: linear-gradient(to left, #08bac1, #60d272);
+        margin: 7px auto;
+        border: 0;
         padding: 10px;
         height: 38px;
         text-align: center;
-    
-    }
+        color: #fff;
+      }
     }
   }
 }

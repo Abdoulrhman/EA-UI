@@ -13,8 +13,16 @@ const  Header : NextComponentType =()=> {
                         <div className={styles.cartBadge}>
                             
                       Lot # 589280
-                </div>
-                    </div>
+                        </div>
+                        <div className={styles.heartWrapper}>
+                            <div className={styles.heartStatus}>
+                        	<label className={styles.heartStatusText}>
+						Added to watchlist
+						
+                                </label>
+                                </div>
+                        </div>
+                        </div>
                 </div>
                 <div className={styles.list_details}>
                     <div className={styles.list_title}>
