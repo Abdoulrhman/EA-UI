@@ -9,16 +9,10 @@ function CardTags({dir}:any) {
         Id: 0,
         Title: "3,878 Km"
     }])
-	// const [itemTags, setItemTags] = useState([]);
-
     const tagImageDimensions = {
 		width: '15px',
 		height: '15px',
 	};
-
-    // useEffect(() => {
-	// 	tags && setItemTags(tags);
-	// }, [tags]);
 
     return (
         <div style={{direction:dir}} className={styles.productStatus}>

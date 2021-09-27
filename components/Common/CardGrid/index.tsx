@@ -16,7 +16,7 @@ function GridCard() {
         <>
             <div className={styles.container}>
                 <div className={styles.cardMedia}> 
-                    <Favourite  top="10px" left={lang && "10px"} right={!lang && "10px"} />
+                    <Favourite  top="10px" left={lang && "10px"} right={!lang && "10px"} dir={lang ? "ltr" : "rtl"} />
                     <img className={styles.cardImage} src="/assets/images/car.png" alt="car" />
                     <Lot bottom="12px" left={lang && "0px"} right={!lang && "0px"} />
                     <Bid bottom="-20px" left={!lang && "10px"} right={lang && "10px"} dir={lang ? "ltr" : "rtl"} />

@@ -1,11 +1,14 @@
-import React,{useState} from 'react'
-import styles from './styles.module.scss'
+import React,{useState} from 'react';
+import useOnclickOutside from "react-cool-onclickoutside";
+import styles from './styles.module.scss';
 
 
 function Menu({dir}:any) {
 	const [showMoreOptions, setShowMoreOptions] = useState(false);
 
-    
+    const ref = useOnclickOutside(() => {
+        setShowMoreOptions(false);
+      });
     
     return (
         <>
@@ -16,7 +19,7 @@ function Menu({dir}:any) {
                         setShowMoreOptions(!showMoreOptions);
                 }}/>
             {showMoreOptions ? 
-                <ul style={{right: dir === "ltr" ? "0px" : "" , left: dir === "rtl" ? "0px" : "" }} className={styles.container}>
+                <ul ref={ref} style={{right: dir === "ltr" ? "0px" : "" , left: dir === "rtl" ? "0px" : "" }} className={styles.container}>
                     <li className={styles.listItem}>
                         <div style={{marginRight: dir === "ltr" ? "10px" : "0px" , marginLeft: dir === "rtl" ? "10px" : "0px"}} className={styles.imgContainer}>
                             <img src="/assets/icons/clock.svg" />
