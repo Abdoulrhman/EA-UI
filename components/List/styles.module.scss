@@ -273,6 +273,15 @@
     height: 38px;
     text-align: center;
     color: #fff;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    .bidImg{
+        margin-right: 10px;
+    }
+     .bidImgAr{
+        margin-left: 10px;
+    }
   }
 }
 // media query
