@@ -5,10 +5,9 @@ import CardFooter from './CardFooter'
 import Bid from './Bid'
 import Favourite from './Favourite'
 import Lot from './Lot'
-// import { useIntl } from 'react-intl';
+import Menu from './Menu'
 
 function GridCard() {
-	// const locale = useIntl().locale;
     const[lang, setLang] = useState(true);
     const handleClick = () =>{
         setLang(!lang);
@@ -27,12 +26,13 @@ function GridCard() {
                     <CardTags dir={lang ? "ltr" : "rtl"} />
                     <p className={lang ? styles.cardPrice : styles.cardPriceAr}><span>AED</span>243.000</p>
                     <div style={{direction: lang ? "ltr" : "rtl"}} className={styles.cardFooterContainer}>
-                     <CardFooter  dir={lang ? "ltr" : "rtl"} />
-                      <img src="/assets/icons/menu.svg" alt="menu" />  
+                        <CardFooter  dir={lang ? "ltr" : "rtl"} />
+                        <Menu dir={lang ? "ltr" : "rtl"} />
                     </div>
                 </div>
             </div>
-            <button onClick={handleClick}>Test Lang</button>
+            {/* for test */}
+            <button onClick={handleClick}>Test Lang</button> 
         </>
     )
 }
