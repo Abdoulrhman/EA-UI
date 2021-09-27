@@ -1,7 +1,9 @@
 .warpper {
   width: 80%;
-  background-color: #ddd;
+  background-color: #fff;
   float: right;
+  box-shadow: 0px 4px 8px #3f3f3f29 !important;
+  border-radius: 4px;
 
   .list {
     display: flex;
@@ -31,6 +33,45 @@
           justify-content: center;
           background-color: rgb(66 74 100 / 80%);
         }
+        .heartWrapperAr {
+          top: 10px;
+          right: 10px;
+          position: absolute;
+          .heartStatus {
+            width: 119px;
+            height: 22px;
+            display: flex;
+            padding: 5px;
+            background: rgb(255 255 255 / 70%);
+            align-items: center;
+            border-radius: 11px;
+            justify-content: center;
+            .heartStatusText {
+              color: #404040;
+              font-size: 9px;
+              display: flex;
+            } 
+               .heartIcon{
+                width: 15px;
+                height: 15px;
+            }
+            .rightIcon {
+              color: "#404040";
+              width: "12px";
+              height: "12px";
+            }
+            .rightIconAr {
+              color: "#404040";
+              width: "12px";
+              height: "12px";
+              transform: "rotate(180deg)";
+              -webkit-transform: "rotate(180deg)";
+              -moz-transform: "rotate(180deg)";
+              -ms-transform: "rotate(180deg)";
+              -o-transform: "rotate(180deg)";
+            }
+        }
+    }
         .heartWrapper {
           top: 10px;
           left: 10px;
@@ -45,9 +86,13 @@
             border-radius: 11px;
             justify-content: center;
             .heartStatusText {
-              color: "#404040";
+              color: #404040;
               font-size: 9px;
               display: flex;
+            }
+            .heartIcon{
+                width: 15px;
+                height: 15px;
             }
             .rightIcon {
               color: "#404040";
@@ -70,12 +115,12 @@
     }
     .list_details {
       width: 65%;
-      background-color: yellow;
-      padding: 15px;
+      padding: 0 15px;
       .list_title {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 10px;
         h3 {
           color: #404040;
           font-size: 16px;
@@ -87,84 +132,147 @@
           display: flex;
           margin: 0;
         }
-        li {
-          margin-left: 8px;
+        .cartSocailList {
           display: flex;
-          justify-content: center;
-          align-items: "center";
-        }
-      }
-
-      .proudectStatus {
-        display: flex;
-        flex-wrap: wrap;
-        .labelStatus {
-          color: #424a64;
-          display: flex;
-          padding: 3px 4px 2px 5px;
-          font-size: 12px;
-          min-width: 55px;
-          min-height: 17px;
           align-items: center;
-          margin-right: 8px;
-          border-radius: 2px;
-          margin-bottom: 5px;
+          margin-left: 8px;
           justify-content: center;
-          background-color: rgb(238, 238, 238);
-          color: rgb(63, 63, 63);
         }
-      }
-
-      .stats {
-        .statsList {
-          list-style: none;
+        .backgroundGray {
+          width: 28px;
+          height: 28px;
           display: flex;
-          justify-content: space-between;
-          padding: 0;
-          border-top: 1px solid #e2e2e2;
-          padding-top: 10px;
-
-          li {
-          }
+          align-items: center;
+          border-radius: 50%;
+          justify-content: center;
+          background-color: #404040;
+        }
+        .backgroundPinned {
+          width: 28px;
+          height: 28px;
+          display: flex;
+          box-shadow: 0 0 3px 0 rgb(0 0 0 / 20%);
+          align-items: center;
+          border-radius: 50%;
+          justify-content: center;
+          background-color: rgb(253 253 253 / 70%);
         }
       }
     }
-
-    .list_btn {
-      width: 25%;
-      background-color: #fafbfb;
+    .showTablet{
+        display: none;
+    }
+    li {
+      margin-left: 8px;
       display: flex;
       justify-content: center;
-      flex-direction: column;
-      padding: 15px 30px;
-      .price_amount {
-        color: #57a721;
-        margin-bottom: 10px;
-      }
-      .amount_label {
-        margin-bottom: 8px;
-        font-size: 1.625rem;
-      }
-      .priceStyle {
+      align-items: "center";
+    }
+  }
+
+  .proudectStatus {
+    display: flex;
+    flex-wrap: wrap;
+    .labelStatus {
+      color: #424a64;
+      display: flex;
+      padding: 3px 4px 2px 5px;
+      font-size: 12px;
+      min-width: 55px;
+      min-height: 17px;
+      align-items: center;
+      margin-right: 8px;
+      border-radius: 2px;
+      margin-bottom: 5px;
+      justify-content: center;
+      background-color: rgb(238, 238, 238);
+      color: rgb(63, 63, 63);
+    }
+  }
+
+  .stats {
+    .statsList {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      border-top: 1px solid #e2e2e2;
+      padding-top: 10px;
+      span {
         color: #404040;
-        margin-bottom: 10px;
-        .secoundSpan {
-          font-weight: bold;
-        }
+        font-size: 14px;
       }
-      .bidBtn {
-        width: 167px;
-        padding: 4px;
-        font-size: 13px;
-        border-radius: 20px;
-        background-image: linear-gradient(to left, #08bac1, #60d272);
-        margin: 7px auto;
-        border: 0;
-        padding: 10px;
-        height: 38px;
-        text-align: center;
-        color: #fff;
+      img {
+        margin: 0 5px;
+      }
+      li {
       }
     }
+  }
+}
+
+.list_btn {
+  width: 25%;
+  background-color: #fafbfb;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+     padding: 10px 15px;
+
+  .price_amount {
+    color: #57a721;
+    margin-bottom: 10px;
+  }
+  .amount_label {
+    margin-bottom: 8px;
+    font-size: 1.625rem;
+    font-weight: bold;
+    margin: 0px 5px;
+  }
+  .priceStyle {
+    color: #404040;
+    margin-bottom: 5px;
+    .secoundSpan {
+      font-weight: bold;
+      margin: 0px 3px;
+    }
+  }
+  .bidBtn {
+    width: 167px;
+    padding: 4px;
+    font-size: 13px;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, #08bac1, #60d272);
+    margin: 7px auto;
+    border: 0;
+    padding: 10px;
+    height: 38px;
+    text-align: center;
+    color: #fff;
+  }
+}
+// media query
+
+
+@media (max-width:1024px){
+ .warpper{
+      width: 100%;
+  }  
+  .showTablet{
+      display: none !important;
+  }
+}
+@media (max-width:768px){
+  .warpper{
+      width: 100%;
+  }  
+  .priceStyle{
+      font-size: 12px;
+  }
+  .hiddenTablet{
+      display: none !important;
+  }
+   .showTablet{
+      display: block !important;
   }
 }
