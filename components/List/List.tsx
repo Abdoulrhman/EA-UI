@@ -122,7 +122,6 @@ const Header: NextComponentType = () => {
             </div>
           </div>
         </div>
-        <button>lang</button>
       </div>
     );
 };
