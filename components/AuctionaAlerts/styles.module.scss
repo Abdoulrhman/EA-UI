@@ -175,6 +175,35 @@
       .containerAr {
         padding-right: 1.5rem !important;
         padding-left: 0;
+          .checkmark {
+          position: absolute;
+          top: 5px;
+          left: 0px;
+          height: 14px;
+          width: 14px;
+          background-color: #fff;
+          border: 1px solid #b7bfc7;
+          padding: 1px;
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 4px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            background: red;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+          }
+
+          label {
+            font-size: 0.875rem;
+          }
+        }
       }
       .container {
         padding-left: 1.5rem !important;
