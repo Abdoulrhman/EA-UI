@@ -9,7 +9,10 @@ const AuctionAlerts: NextComponentType = () => {
       <div className={styles.auctionAlerts}>
         <div className={styles.modal_content}>
           <div className={styles.modal_header}>
-            <img className={styles.modal_header_img} src="assets/icons/close.svg" />
+            <img
+              className={styles.modal_header_img}
+              src="assets/icons/close.svg"
+            />
           </div>
           <div className={styles.modal_body}>
             <h3>Enable Auction Alerts</h3>
@@ -44,6 +47,13 @@ const AuctionAlerts: NextComponentType = () => {
               <div className={styles.info}>
                 <p>Email Address</p>
                 <ul className={styles.checkList}>
+                  <li>
+                    <label className={styles.container}>
+                      <input type="checkbox" />
+                      <span className={styles.checkmark}></span>
+                    </label>
+                    <span>+971 55 8634958</span>
+                  </li>
                   <li>
                     <label className={styles.container}>
                       <input type="checkbox" />
