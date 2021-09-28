@@ -9,7 +9,7 @@ const AuctionAlerts: NextComponentType = () => {
       <div className={styles.auctionAlerts}>
         <div className={styles.modal_content}>
           <div className={styles.modal_header}>
-            <img src="assets/icons/close.svg" />
+            <img className={styles.modal_header_img} src="assets/icons/close.svg" />
           </div>
           <div className={styles.modal_body}>
             <h3>Enable Auction Alerts</h3>

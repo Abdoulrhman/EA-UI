@@ -23,8 +23,11 @@
       border-top-left-radius: 0.3rem;
       border-top-right-radius: 0.3rem;
 
-      img {
+      .modal_header_img {
         float: right;
+      }
+      .modal_header_imgAr {
+        float: left;
       }
     }
     .modal_body {
@@ -52,7 +55,7 @@
           display: none;
           left: 4px;
           top: 4px;
-          width: 14px ;
+          width: 14px;
           height: 14px;
           background: red;
           border-radius: 2px;
@@ -133,8 +136,7 @@
     .checkList {
       list-style: none;
       padding: 0;
-    .checkmark {
-   
+      .checkmark {
         position: absolute;
         top: 3px !important;
         left: 0px;
@@ -149,7 +151,7 @@
           display: none;
           left: 2px !important;
           top: 2px !important;
-          width: 10px  !important;
+          width: 10px !important;
           height: 10px !important;
           background: red;
           border-radius: 2px;
@@ -170,39 +172,42 @@
         color: #828e99;
         font-size: 14px;
       }
-         .container{
+      .containerAr {
+        padding-right: 1.5rem !important;
+        padding-left: 0;
+      }
+      .container {
         padding-left: 1.5rem !important;
-            .checkmark {
-        position: absolute;
-        top: 5px;
-        left: 0px;
-        height: 14px;
-        width: 14px;
-        background-color: #fff;
-        border: 1px solid #b7bfc7;
-        padding: 1px;
-        &:after {
-          content: "";
+        .checkmark {
           position: absolute;
-          display: none;
-          left: 4px;
-          top: 4px;
-          width: 14px;
+          top: 5px;
+          left: 0px;
           height: 14px;
-          background: red;
-          border-radius: 2px;
-          -webkit-border-radius: 2px;
-          -moz-border-radius: 2px;
-          -ms-border-radius: 2px;
-          -o-border-radius: 2px;
-        }
+          width: 14px;
+          background-color: #fff;
+          border: 1px solid #b7bfc7;
+          padding: 1px;
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 4px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            background: red;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+          }
 
-        label {
-          font-size: 0.875rem;
+          label {
+            font-size: 0.875rem;
+          }
         }
       }
-      }
-    
     }
 
     .auctionBtn {
