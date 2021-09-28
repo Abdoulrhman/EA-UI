@@ -17,7 +17,7 @@ const AuctionAlerts: NextComponentType = () => {
             <div className={styles.check}>
               <label className={styles.container}>
                 <input type="checkbox" />
-                <span className="checkmark"></span>
+                <span className={styles.checkmark}></span>
               </label>
               <div className={styles.info}>
                 <p>Email Address</p>
@@ -28,7 +28,7 @@ const AuctionAlerts: NextComponentType = () => {
             <div className={styles.check}>
               <label className={styles.container}>
                 <input type="checkbox" />
-                <span className="checkmark"></span>
+                <span className={styles.checkmark}></span>
               </label>
               <div className={styles.info}>
                 <p>Email Address</p>
@@ -43,14 +43,24 @@ const AuctionAlerts: NextComponentType = () => {
               </label>
               <div className={styles.info}>
                 <p>Email Address</p>
-                <label>johnson.85@gmail.com</label>
+                <ul className={styles.checkList}>
+                  <li>
+                    <label className={styles.container}>
+                      <input type="checkbox" />
+                      <span className={styles.checkmark}></span>
+                    </label>
+                    <span>+971 55 8634958</span>
+                  </li>
+                </ul>
               </div>
             </div>
             {/* Check Div  */}
           </div>
 
           <div className="styles.modal-footer">
-            <button>Close</button>
+            <div className={styles.auctionBtn}>
+              <button>Edit Auction Alerts</button>
+            </div>
           </div>
         </div>
       </div>

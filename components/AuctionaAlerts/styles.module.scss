@@ -2,7 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+
   .modal_content {
+    padding: 30px 0 70px 0;
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -16,7 +19,7 @@
     outline: 0;
     width: 426px;
     .modal_header {
-      padding: 15px;
+      padding: 0 30px 0 30px;
       border-top-left-radius: 0.3rem;
       border-top-right-radius: 0.3rem;
 
@@ -25,6 +28,7 @@
       }
     }
     .modal_body {
+      padding: 0 50px;
       h3 {
         text-align: center;
         font-size: 16px;
@@ -39,8 +43,8 @@
         left: 10px;
         height: 14px;
         width: 14px;
-        background-color: #eee;
-        border:1px solid #B7BFC7;
+        background-color: #fff;
+        border: 1px solid #b7bfc7;
         padding: 1px;
         &:after {
           content: "";
@@ -48,8 +52,8 @@
           display: none;
           left: 2px;
           top: 2px;
-          width: 13px;
-          height: 13px;
+          width: 10px;
+          height: 10px;
           background: red;
           border-radius: 2px;
           -webkit-border-radius: 2px;
@@ -66,6 +70,9 @@
         border-bottom: 1px solid #eeeeee;
         padding: 15px 0;
         display: flex;
+        &:last-of-type {
+          margin-bottom: 25px;
+        }
         .container {
           input {
             position: absolute;
@@ -76,7 +83,7 @@
             &:checked {
               ~ {
                 .checkmark {
-                  background-color: #b6bfc6;
+                  background-color: #fff;
                   width: 15px;
                   height: 15px;
                   border-radius: 2px;
@@ -93,7 +100,7 @@
             input {
               ~ {
                 .checkmark {
-                  background-color: #ccc;
+                  background-color: #fff;
                 }
               }
             }
@@ -121,6 +128,37 @@
             font-size: 14px;
           }
         }
+      }
+    }
+    .checkList {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+      }
+      span {
+        color: #828e99;
+        font-size: 14px;
+      }
+    }
+
+    .auctionBtn {
+      button {
+        color: #fff;
+        padding: 16px;
+        font-size: 14px;
+        min-width: 215px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-stretch: normal;
+        border-radius: 54px;
+        letter-spacing: normal;
+        background-color: #404040;
+        margin-top: 70px;
+        margin: auto;
+        display: block;
       }
     }
   }
