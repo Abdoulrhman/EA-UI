@@ -133,7 +133,36 @@
     .checkList {
       list-style: none;
       padding: 0;
+    .checkmark {
+   
+        position: absolute;
+        top: 3px !important;
+        left: 0px;
+        height: 16px !important;
+        width: 16px !important;
+        background-color: #fff;
+        border: 1px solid #b7bfc7;
+        padding: 1px;
+        &:after {
+          content: "";
+          position: absolute;
+          display: none;
+          left: 2px !important;
+          top: 2px !important;
+          width: 10px  !important;
+          height: 10px !important;
+          background: red;
+          border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          -o-border-radius: 2px;
+        }
 
+        label {
+          font-size: 0.875rem;
+        }
+      }
       li {
         display: flex;
       }
@@ -141,7 +170,9 @@
         color: #828e99;
         font-size: 14px;
       }
-        .checkmark {
+         .container{
+        padding-left: 1.5rem !important;
+            .checkmark {
         position: absolute;
         top: 5px;
         left: 0px;
@@ -170,6 +201,8 @@
           font-size: 0.875rem;
         }
       }
+      }
+    
     }
 
     .auctionBtn {
