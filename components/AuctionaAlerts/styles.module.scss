@@ -1,0 +1,127 @@
+.auctionAlerts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .modal_content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    outline: 0;
+    width: 426px;
+    .modal_header {
+      padding: 15px;
+      border-top-left-radius: 0.3rem;
+      border-top-right-radius: 0.3rem;
+
+      img {
+        float: right;
+      }
+    }
+    .modal_body {
+      h3 {
+        text-align: center;
+        font-size: 16px;
+      }
+      p {
+        color: #828e99;
+        font-size: 12px;
+      }
+      .checkmark {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        height: 14px;
+        width: 14px;
+        background-color: #eee;
+        border:1px solid #B7BFC7;
+        padding: 1px;
+        &:after {
+          content: "";
+          position: absolute;
+          display: none;
+          left: 2px;
+          top: 2px;
+          width: 13px;
+          height: 13px;
+          background: red;
+          border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          -o-border-radius: 2px;
+        }
+
+        label {
+          font-size: 0.875rem;
+        }
+      }
+      .check {
+        border-bottom: 1px solid #eeeeee;
+        padding: 15px 0;
+        display: flex;
+        .container {
+          input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            &:checked {
+              ~ {
+                .checkmark {
+                  background-color: #b6bfc6;
+                  width: 15px;
+                  height: 15px;
+                  border-radius: 2px;
+                  top: 5px;
+                  left: 10px;
+                  &:after {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+            input {
+              ~ {
+                .checkmark {
+                  background-color: #ccc;
+                }
+              }
+            }
+          }
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 0.875rem;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        .info {
+          p {
+            margin: 0;
+            color: #404040;
+            font-size: 16px;
+          }
+          label {
+            color: #828e99;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
