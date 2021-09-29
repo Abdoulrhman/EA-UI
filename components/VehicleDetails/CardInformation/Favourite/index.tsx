@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import styles from './styles.module.scss'
 
-function Favourite({top,right,bottom,left,dir}:any) {
+function Favourite() {
     const[iconToggle, setIconToggle] = useState(false)
     const handleClick = () =>{
         setIconToggle(!iconToggle)

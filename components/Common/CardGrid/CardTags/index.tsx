@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
 
-function CardTags({dir}:any) {
+function CardTags() {
     const [tags,setTags] = useState([{
         Image: "https://cdn.emiratesauction.com/static/AppsAssets/Tags/combinedShape@3x.png?v=1",
         TextColor: "#3f3f3f",
@@ -15,7 +15,7 @@ function CardTags({dir}:any) {
 	};
 
     return (
-        <div style={{direction:dir}} className={styles.productStatus}>
+        <div className={styles.productStatus}>
 			{tags &&
 				tags.map((tag,indx) => (
 					<label
@@ -27,7 +27,7 @@ function CardTags({dir}:any) {
 						// className={`${
 						// 	locale == 'en' ? styles.labelStatus : styles.labelStatusAr
 						// }`}
-                        className={dir === "ltr" ? styles.labelStatus : styles.labelStatusAr}
+                        className={styles.labelStatus}
 					>
 						<img
 							style={{
@@ -35,7 +35,7 @@ function CardTags({dir}:any) {
 								height: tagImageDimensions.height,
 							}}
 							// className={locale == 'en' ? styles.tagImg : styles.tagImgAr}
-							className={dir === "ltr" ? styles.tagImg : styles.tagImgAr}
+							className={styles.tagImg}
 							src={tag?.Image}
 						></img>
 						<span>{tag?.Title}</span>

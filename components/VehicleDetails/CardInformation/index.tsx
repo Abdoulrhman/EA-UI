@@ -3,9 +3,12 @@ import Divider from '../../Common/Atoms/Divider'
 import CardTags from '../../Common/CardGrid/CardTags'
 import Calendar from './Calendar'
 import Favourite from './Favourite'
-import Lot from './Lot'
+import Lot from '../../Common/Atoms/Lot'
 import MoreInfo from './MoreInfo'
+import NotificationIcon from './NotificationIcon'
+import PinIcon from './PinIcon'
 import PriceDetails from './PriceDetails'
+import ShareIcon from './ShareIcon'
 import styles from './styles.module.scss'
 
 function CardInformation() {
@@ -15,10 +18,10 @@ function CardInformation() {
                 <div className={styles.head}>
                     <Lot />
                     <div className={styles.iconsContainer}>
-                    <Favourite />
-                    <Favourite />
-                    <Favourite />
-                    <Favourite />
+                        <Favourite />
+                        <PinIcon />
+                        <ShareIcon />
+                        <NotificationIcon />
                     </div>
                 </div>
                 <h3 className={styles.cardTitle}>2020 Lexus LX 570 9867</h3>

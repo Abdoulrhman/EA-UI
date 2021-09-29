@@ -45,9 +45,15 @@
         align-items: center;
         gap: 10px;
         padding: 8px 40px;
+
         .btnText{
             color: #FFFFFF;
             font-size: 13px;
         }
+        
+        &:hover{
+            cursor: pointer;
+        }
+        
     }
 }

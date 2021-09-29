@@ -2,38 +2,34 @@ import React,{useState} from 'react'
 import styles from './styles.module.scss'
 import CardTags from './CardTags'
 import CardFooter from './CardFooter'
-import Bid from './Bid'
-import Favourite from './Favourite'
-import Lot from './Lot'
+import Bid from '../Atoms/Icons/Bid'
+import Favourite from '../Atoms/Icons/Favourite'
+import Lot from '../Atoms/Lot'
 import Menu from './Menu'
 
 function GridCard() {
-    const[lang, setLang] = useState(true);
-    const handleClick = () =>{
-        setLang(!lang);
-    }
+ 
     return (
-        <>
-            <div className={styles.container}>
-                <div className={styles.cardMedia}> 
-                    <Favourite  top="10px" left={lang && "10px"} right={!lang && "10px"} dir={lang ? "ltr" : "rtl"} />
-                    <img className={styles.cardImage} src="/assets/images/car.png" alt="car" />
-                    <Lot bottom="12px" left={lang && "0px"} right={!lang && "0px"} />
-                    <Bid bottom="-20px" left={!lang && "10px"} right={lang && "10px"} dir={lang ? "ltr" : "rtl"} />
-                </div>
-                <div className={styles.cardContent}>
-                    <h3 className={lang ? styles.cardTitle : styles.cardTitleAr}>2021 Porsche Cayen</h3>
-                    <CardTags dir={lang ? "ltr" : "rtl"} />
-                    <p className={lang ? styles.cardPrice : styles.cardPriceAr}><span>AED</span>243.000</p>
-                    <div style={{direction: lang ? "ltr" : "rtl"}} className={styles.cardFooterContainer}>
-                        <CardFooter  dir={lang ? "ltr" : "rtl"} />
-                        <Menu dir={lang ? "ltr" : "rtl"} />
-                    </div>
+        <div className={styles.container}>
+            <div className={styles.cardMedia}> 
+                <Favourite containerStyle={{position:"absolute", top: "10px" , left:"10px" , // right:"10px" if rtl dir
+                }} />
+                <img className={styles.cardImage} src="/assets/images/car.png" alt="car" />
+                <Lot containerStyle={{position:"absolute" , bottom:"12px", left:"0px" , //right:"0px" if rtl dir
+            }}   />
+                <Bid containerStyle={{position:"absolute" , bottom:"-20px" , right:"10px" ,  //left:"10px" if rtl dir
+                }}  />
+            </div>
+            <div className={styles.cardContent}>
+                <h3 className={styles.cardTitle}>2021 Porsche Cayen</h3>
+                <CardTags />
+                <p className={styles.cardPrice}><span>AED</span>243.000</p>
+                <div className={styles.cardFooterContainer}>
+                    <CardFooter   />
+                    <Menu  />
                 </div>
             </div>
-            {/* for test */}
-            <button onClick={handleClick}>Test Lang</button> 
-        </>
+        </div>
     )
 }
 
