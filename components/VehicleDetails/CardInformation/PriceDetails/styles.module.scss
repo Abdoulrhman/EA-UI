@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D2D2D;
+    padding: 25px 30px;
+    width: 100%;
+    .itemContainer{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+
+        p{
+            margin: 0;
+        }
+        .title{
+            font-size: 14px;
+            color: #B6BFC6;
+            margin: 0;
+        }
+        .total{
+            color: #60D273;
+            font-size: 26px;
+            line-height: 30px;
+
+            sup{
+                font-size: 16px;
+            }
+        }
+        .increment{
+            color: #FFFFFF;
+            font-size: 19px;
+            line-height: 30px;
+            sup{
+                font-size: 12px;
+            }
+        }
+    }
+
+    .btnBid{
+        background: linear-gradient(270deg, #08BAC1 0%, #60D272 100%);
+        border: none;
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 40px;
+        .btnText{
+            color: #FFFFFF;
+            font-size: 13px;
+        }
+    }
+}
