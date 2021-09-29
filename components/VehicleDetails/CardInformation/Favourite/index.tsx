@@ -15,7 +15,7 @@ function Favourite() {
                     <img onClick={handleClick} src="/assets/icons/fav-fill.svg" alt="favourite icon" />
                 </div> :
                  <div className={styles.iconContainer}>
-                    <img onClick={handleClick} src="/assets/icons/fav-border.svg" alt="favourite icon" />
+                    <img onClick={handleClick} src="/assets/icons/fav-border-white.svg" alt="favourite icon" />
                 </div>
             }
         </>
