@@ -25,9 +25,11 @@
 
       .modal_header_img {
         float: right;
+        cursor: pointer;
       }
       .modal_header_imgAr {
         float: left;
+        cursor: pointer;
       }
     }
     .modal_body {
@@ -176,7 +178,7 @@
       .containerAr {
         padding-right: 1.5rem !important;
         padding-left: 0;
-          .checkmark {
+        .checkmark {
           position: absolute;
           top: 5px;
           left: 0px;
@@ -256,6 +258,7 @@
         margin-top: 70px;
         margin: auto;
         display: block;
+        cursor: pointer;
       }
     }
   }
