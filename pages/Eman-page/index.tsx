@@ -6,9 +6,9 @@ import Highlights from '../../components/VehicleDetails/Highlights'
 function index() {
     return (
         <div>
-            {/* <GridCard /> */}
+            <GridCard />
             {/* <CardInformation /> */}
-            <Highlights />
+            {/* <Highlights /> */}
         </div>
     )
 }

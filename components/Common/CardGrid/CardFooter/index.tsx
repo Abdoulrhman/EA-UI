@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 function CardFooter({dir}:any) {
 
     return (
-        <div style={{direction:dir}} className={styles.cardFooter}>
+        <div className={styles.cardFooter}>
             <div className={styles.itemContainer}>
                 <img className={styles.footerImage} src="/assets/icons/bid-grey.svg"  />
                 <p className={styles.footerText}>367</p>

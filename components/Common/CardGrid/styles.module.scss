@@ -4,9 +4,9 @@
     margin-bottom: 10px;
     box-shadow: 0 2px 4px 0 rgba(227, 228, 232, 0.89);
     border-radius: 4px ;
-    // width: 230px; // for test
-    // margin: 50px; // for test
-    width: 100%;
+    width: 230px; // for test
+    margin: 50px; // for test
+    // width: 100%;
 }
 .cardMedia{ 
     position: relative;
@@ -31,19 +31,7 @@
          }
 
     }
-    .cardTitleAr{
-        color: #3f3f3f;
-        font-size: 16px;
-        font-weight: 500;
-        margin: 0;
-        line-height: 1.4;
-		text-align: start;
-		white-space: normal;
-        direction: rtl;
-        @media (max-width: 575.98px) { 
-            font-size: 14px;
-         }
-    }
+
     .cardPrice{
         font-size: 20px;
 		color: #58a722;
@@ -65,27 +53,6 @@
          }
     }
 
-    .cardPriceAr{
-        font-size: 20px;
-		color: #58a722;
-		font-weight: 500;
-        margin: 0;
-        text-align: start;
-		white-space: normal;
-        direction: rtl;
-        span{
-            font-size: 14px;
-            margin-right: 5px;
-
-            @media (max-width: 575.98px) { 
-                font-size: 12px;
-             }
-        }
-
-        @media (max-width: 575.98px) { 
-            font-size: 18px;
-         }
-    }
 }
 .cardFooterContainer{
     display: flex;
