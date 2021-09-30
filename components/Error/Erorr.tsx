@@ -1,15 +1,15 @@
 import React from "react";
 import type { NextPage, NextComponentType } from "next";
 import styles from "./styles.module.scss";
-import NoAuctionImg from "../../public/assets/images/noauction.svg";
+import Attention from "../../public/assets/images/Attention.svg";
 
 const NoAuction: NextComponentType = () => {
   return (
     <div>
-      <div className={styles.warpper}>
+      <div className={styles.wrapper}>
         <div className={styles.auction}>
           <div className={styles.auctionBody}>
-            <img src="assets/images/noauction.svg" />
+            <img src="assets/images/Attention.svg" />
           </div>
           <div className={styles.auctionHeader}>
             <h3>Error 401</h3>

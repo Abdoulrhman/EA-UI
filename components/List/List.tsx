@@ -16,7 +16,7 @@ const Header: NextComponentType = () => {
   return (
     <div>
       {/* Start Wrapper */}
-      <div className={styles.warpper}>
+      <div className={styles.wrapper}>
         <div className={styles.list}>
           <div className={styles.list_img}>
             <div className={styles.image_Wrapper}>
@@ -108,7 +108,7 @@ const Header: NextComponentType = () => {
         </div>
       </div>
       {/* End Wrapper */}
-      <div className={styles.warpper}>
+      <div className={styles.wrapper}>
         <div className={styles.list}>
           <div className={styles.list_img}>
             <div className={styles.image_Wrapper}>

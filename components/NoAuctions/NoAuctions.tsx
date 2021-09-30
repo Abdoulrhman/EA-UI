@@ -6,7 +6,7 @@ import NoAuctionImg from "../../public/assets/images/noauction.svg";
 const NoAuction: NextComponentType = () => {
   return (
     <div>
-      <div className={styles.warpper}>
+      <div className={styles.wrapper}>
         <div className={styles.auction}>
           <div className={styles.auctionHeader}>
             <h3>More items are on their way!</h3>
