@@ -159,7 +159,7 @@
         .cartSocailList {
           display: flex;
           align-items: center;
-          margin-left: 8px;
+          margin: 0 5px;
           justify-content: center;
         }
         .backgroundGray {
@@ -200,7 +200,7 @@
     .labelStatus {
       color: #424a64;
       display: flex;
-      padding: 3px 4px 2px 5px;
+      padding: 3px 4px 3px 5px;
       font-size: 12px;
       min-width: 55px;
       min-height: 17px;
@@ -341,6 +341,14 @@ html[dir="rtl"] {
   .cartBadge {
     padding: 3px 6px 2px 7px;
     border-radius: 2px 0px 0px 2px;
+  }
+}
 
+// Direction Rtl
+html[dir="rtl"] {
+  .labelStatus {
+    padding: 3px 5px 3px 4px;
+    margin-left: 8px;
+    margin-right: auto;
   }
 }

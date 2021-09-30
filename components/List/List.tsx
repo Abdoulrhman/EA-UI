@@ -8,6 +8,7 @@ import Dots from "../../public/assets/icons/dots.svg";
 import bidGray from "../../public/assets/icons/bidGray.svg";
 import heart from "../../public/assets/icons/haert.svg";
 import speed from "../../public/assets/icons/speed.svg";
+import hammer from "../../public/assets/icons/hammer.svg";
 import HammerWhite from "../../public/assets/icons/HammerWhite.svg";
 
 import styles from "./styles.module.scss";
@@ -40,6 +41,9 @@ const Header: NextComponentType = () => {
               <h3>2021 Porsche Cayen</h3>
               <div>
                 <ul className={`${styles.cartSocail} ${styles.hiddenTablet}`}>
+                  <li className={styles.cartSocailList}>
+                    <img src="/assets/icons/hammer.svg" />
+                  </li>
                   <li
                     className={`${styles.cartSocailList} ${styles.backgroundPinned}`}
                   >
@@ -94,8 +98,10 @@ const Header: NextComponentType = () => {
             </span>
             <div className={styles.priceStyle}>
               <span>Min Increment :</span>
-              <sub> AED</sub>
-              <span className={styles.secoundSpan}>100</span>
+              <label> AED</label>
+              <sub>
+                <span className={styles.secoundSpan}>100</span>
+              </sub>
             </div>
             <button className={styles.bidBtn}>
               <img
