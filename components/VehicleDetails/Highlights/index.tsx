@@ -53,7 +53,7 @@ function Highlights() {
                                     </li>
                                 ))}
                             </ul>
-                            <Divider width="100%" height="1px" bgColor="#EDEDED" margin="20px" />
+                            <Divider width="100%" height="1px" bgColor="#EDEDED" margin="20px 0px" />
                         </>
                     )
             )}      
