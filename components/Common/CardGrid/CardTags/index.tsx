@@ -8,7 +8,8 @@ function CardTags() {
         BGColor: "#eeeeee",
         Id: 0,
         Title: "3,878 Km"
-    }])
+    },
+])
     const tagImageDimensions = {
 		width: '15px',
 		height: '15px',

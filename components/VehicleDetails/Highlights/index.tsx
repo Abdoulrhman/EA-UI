@@ -25,14 +25,24 @@ function Highlights() {
                 Title: "General",
                 ImageUrl: "",
                 Order: 0,
-                Options: []
+                Options: [
+                    {
+                        Id: 0,
+                        Title: "GCC Specifications"
+                    }
+                ]
             },
             {
                 Id: 14,
                 Title: "Region",
                 ImageUrl: "",
                 Order: 0,
-                Options: []
+                Options: [
+                    {
+                        Id: 0,
+                        Title: "GCC Specifications"
+                    }
+                ]
             }
         ],
         Id: 1,
@@ -41,22 +51,28 @@ function Highlights() {
 
     return (
         <div className={styles.container}>
-            {info.OptionGroups.map(
-                (o) =>
-                    o.Options.length > 0 && (
-                        <>
-                            <h4 className={styles.optionTitle}>{o.Title}</h4>
-                            <ul className={styles.optionsContainer}>
-                                {o.Options.map((option) => (
-                                    <li className={styles.optionItem}>
+            <div className={styles.head}>
+                <p className={styles.headTitle}>{info.Title}</p>
+                <img src="/assets/icons/arrow-up.svg" alt="arrow" />
+            </div>
+            <Divider width="100%" height="1px" bgColor="#EDEDED" />
+            <div className={styles.contentContainer} >
+                <ul className={styles.optionsContainer}>
+                    {info.OptionGroups.map(
+                        (o, indx) =>
+                        o.Options.length > 0 && (
+                            <>
+                                <h4 className={styles.optionTitle}>{o.Title}</h4>
+                                {o.Options.map((option, indx) => ( 
+                                    <li className={styles.optionItem} key={indx}>
                                         {option.Title}
                                     </li>
                                 ))}
-                            </ul>
-                            <Divider width="100%" height="1px" bgColor="#EDEDED" margin="20px 0px" />
-                        </>
-                    )
-            )}      
+                                </>
+                            )
+                            )}      
+                    </ul>
+                </div>
         </div>
     )
 }
