@@ -31,7 +31,6 @@
     .auctionBtn {
       button {
         color: #fff;
-        padding: 16px;
         font-size: 14px;
         min-width: 215px;
         font-style: normal;
@@ -42,6 +41,7 @@
         letter-spacing: normal;
         background-color: #404040;
         cursor: pointer;
+        height: 48px;
       }
     }
   }
