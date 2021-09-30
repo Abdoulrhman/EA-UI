@@ -43,7 +43,7 @@ function Highlights() {
                         Title: "GCC Specifications"
                     }
                 ]
-            }
+            },
         ],
         Id: 1,
         Title: "HIGHLIGHTS"

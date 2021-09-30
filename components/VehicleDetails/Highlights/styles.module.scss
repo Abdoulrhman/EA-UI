@@ -15,17 +15,21 @@
             color: #404040;
             font-size: 18px;
             font-weight: bold;
+            margin: 0;
         }
 
     }
 
     .contentContainer{
-        padding: 18px 30px;
+        padding: 30px;
 
         .optionTitle{
             color: #828E99;
             font-size: 16px;
-            margin: 8px 0px;
+            margin: 0px 0px 8px 0px;
+            &:not(:first-child){
+                padding-top: 15px;
+            }
         }
         .optionsContainer{
             list-style: none;
@@ -34,9 +38,10 @@
             .optionItem{
                 color: #404040;
                 font-size: 14px;
+              
                 &:not(:last-child){
                     border-bottom: 1px solid #EDEDED;
-                    padding-bottom: 20px;
+                    padding-bottom: 15px;
                 }
             }
         }
