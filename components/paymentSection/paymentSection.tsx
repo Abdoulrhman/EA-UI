@@ -31,6 +31,20 @@ const NoAuction: NextComponentType = () => {
                 Please send us a copy of the transfer receipt and mention any of
                 the won cars to: cs@emiratesauction.com.
               </p>
+              <div className={styles.paymentInfo}>
+                <div className={styles.paymentDetails}>
+                  <p>Loading / unloading Fees :</p>
+                  <p>Emirates Auction</p>
+                </div>
+                <div className={styles.paymentDetails}>
+                  <p>Loading / unloading Fees :</p>
+                  <p>Emirates Auction</p>
+                </div>
+              </div>
+              <div className={styles.paymentBtns}>
+                <button>Copy info</button>
+                <button>Share info</button>
+              </div>
             </div>
           </div>
           {/* Terms Section */}
