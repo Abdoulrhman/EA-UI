@@ -14,8 +14,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        border-bottom: 1px solid #ededed;
-        margin-bottom: 10px;
+        border-bottom: 2px solid #ededed;
         padding: 30px 22px 30px 22px;
 
         h4 {
@@ -23,15 +22,32 @@
           text-transform: uppercase;
           margin: 0;
         }
+
+        img {
+          cursor: pointer;
+        }
       }
       .auctionDetailsBody {
         padding: 0px 22px 0px 22px;
 
-        .auctionTerms {
-          p {
-            color: #828e99;
-            text-transform: capitalize;
+        .auctionAccordionHeader {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 0;
+          border-bottom: 2px solid #EDEDED;
+          h4 {
+            color: #404040;
+            font-size: 16px;
+            margin: 0;
+            font-weight: bold;
+          }
+        }
+        .auctionAccordionBody{
+          p{
+            color:#404040;
             font-size: 14px;
+            line-height: 1.8;
           }
         }
       }
