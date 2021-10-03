@@ -1,9 +1,13 @@
 import React from 'react'
 import styles from './styles.module.scss'
+import classnames from 'classnames';
 
-function Lot({containerStyle}:any) {
+function Lot({status}:any) {
+    const container = classnames(styles.container,{
+        [styles.positionStyle]: status === "card-default"
+    })
     return (
-        <div style={containerStyle} className={styles.container}>
+        <div className={container}>
             <p>Lot #589280</p>
         </div>
     )

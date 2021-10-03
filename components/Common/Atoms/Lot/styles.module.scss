@@ -9,3 +9,19 @@
         margin: 0;
     }
 }
+
+.positionStyle{
+    position:absolute;
+    bottom:12px;
+    left:0px;
+}
+
+html[dir="rtl"]{
+    .container{
+        border-radius: 2px 0px 0px 2px;
+    }
+    .positionStyle{
+        left:auto;
+        right: 0;
+    }
+}
