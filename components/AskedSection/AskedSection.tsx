@@ -1,7 +1,7 @@
 import React from "react";
 import type { NextPage, NextComponentType } from "next";
 import styles from "./styles.module.scss";
-import upArrow from "../../public/assets/icons/arrow-up.svg";
+import plus from "../../public/assets/icons/plus.svg";
 
 const NoAuction: NextComponentType = () => {
   return (
@@ -20,18 +20,16 @@ const NoAuction: NextComponentType = () => {
               <div className={styles.auctionAccordion}>
                 <div className={styles.auctionAccordionHeader}>
                   <h4>Understanding your bidding limit</h4>
-                  <img src="assets/icons/arrow-up.svg" />
+                  <img src="assets/icons/plus.svg" />
                 </div>
-            
               </div>
               {/* start Accordion */}
               {/* start Accordion */}
               <div className={styles.auctionAccordion}>
                 <div className={styles.auctionAccordionHeader}>
                   <h4>Understanding your bidding limit</h4>
-                  <img src="assets/icons/arrow-up.svg" />
+                  <img src="assets/icons/plus.svg" />
                 </div>
-              
               </div>
               {/* start Accordion */}
               {/* start Accordion */}
