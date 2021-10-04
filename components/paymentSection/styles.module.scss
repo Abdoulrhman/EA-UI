@@ -33,7 +33,7 @@
             flex-wrap: nowrap;
             overflow-x: auto;
             position: relative;
-            width: 180%;
+            min-width: 180%;
             padding: 10px 0;
             flex: 1 1 auto;
 
@@ -98,3 +98,9 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .ul {
+       
+            min-width: 250% !important;
+          
+}}
